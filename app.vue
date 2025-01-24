@@ -5,15 +5,15 @@
         <h1 class="text-white text-lg font-bold text-center">Вычислятор попадания на стипендию</h1>
         <p class="text-gray-200 text-center">{{result}}</p>
         <p class="text-teal-200 text-5xl font-bold text-center mt-2 mb-5">{{score}}</p>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 mb-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" min="0" max="100" v-model="rating" type="number" @input="filterInput" placeholder="Рейтинг">
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 mb-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" min="0" max="100" v-model="exam" type="number" @input="filterInput" placeholder="Экзамен">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 mb-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" min="0" max="100" v-model="rating" type="number" @input="filterInput" placeholder="Введите свой рейтинг">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 mb-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" min="0" max="100" v-model="exam" type="number" @input="filterInput" placeholder="Введите баллы за экзамен">
         <div class ="flex items-center justify-center">
           <button class="rounded-lg bg-teal-400 flex items-center justify-center p-2" @click = 'scoresolver'>Жми-жми</button>
         </div>
         <h1 class="text-white text-lg font-bold text-center mt-10">Сколько баллов на экзамене мне нужно, чтобы получить стипедию?</h1>
         <p class="text-gray-200 text-center">{{result1}}</p>
         <p class="text-teal-200 text-5xl font-bold text-center mt-2 mb-5">{{score1}}</p>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 mb-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" min="0" max="100" v-model="rating1" type="number" @input="filterInput" placeholder="Экзамен">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 mb-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" min="0" max="100" v-model="rating1" type="number" @input="filterInput" placeholder="Введите свой рейтинг">
         <div class ="flex items-center justify-center">
           <button class="rounded-lg bg-teal-400 flex items-center justify-center p-2" @click = 'scoresolver1'>Жми-жми</button>
         </div>
