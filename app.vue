@@ -80,6 +80,12 @@
       if (rating.value < 0){
         rating.value = 0;
       }
+      if (rating1.value >= 100){
+        rating1.value = 100;
+      }
+      if (rating1.value < 0){
+        rating1.value = 0
+      }
   }
   </script>
   
