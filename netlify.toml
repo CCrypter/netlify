@@ -1,0 +1,8 @@
+[build]
+  command = "npm run generate" # Команда сборки для Nuxt
+  publish = "dist"             # Папка, в которую Nuxt генерирует статические файлы
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
