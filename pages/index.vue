@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-900 flex items-center justify-center">
-    <div class="bg-gradient-to-r from-purple-500 to-teal-400 p-1 rounded-lg">
-      <div class="bg-gray-900 rounded-lg p-10">
+    <div class="bg-gradient-to-r from-purple-500 to-teal-400 p-1 rounded-xl">
+      <div class="bg-gray-900 rounded-xl p-10">
         <h1 class="text-white text-lg font-bold text-center">Вычислятор попадания на стипендию</h1>
         <p class="text-gray-200 text-center">{{result}}</p>
         <p class="text-teal-200 text-5xl font-bold text-center mt-2 mb-5">{{score}}</p>
@@ -13,7 +13,7 @@
         <h1 class="text-white text-lg font-bold text-center mt-10">Сколько баллов на экзамене мне нужно, чтобы получить стипедию?</h1>
         <p class="text-gray-200 text-center">{{result1}}</p>
         <p class="text-teal-200 text-5xl font-bold text-center mt-2 mb-5">{{score1}}</p>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 mb-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" min="0" max="100" v-model="rating1" type="number" @input="filterInput" placeholder="Введите свой рейтинг">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 mb-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required max="100" v-model="rating1" type="number" @input="filterInput" placeholder="Введите свой рейтинг">
         <div class ="flex items-center justify-center">
           <button class="rounded-lg bg-teal-400 flex items-center justify-center p-2" @click = 'scoresolver1'>Жми-жми</button>
         </div>
@@ -22,15 +22,16 @@
   </div>
   </template>
   <script setup lang = "ts">
+
     import {ref} from 'vue';
   
     const result = ref<string>('Давай узнаем, попадаешь ли ты на стипендию?')
     const result1 = ref<string>('Сколько тебе нужно баллов на экзамене для стипендии?')
     const score = ref<number>(0);
     const score1 = ref<number>(0);
-    let rating = ref<number>();
-    let rating1 = ref<number>();
-    let exam = ref<number>();
+    let rating = ref<number>(0);
+    let rating1 = ref<number>(0);
+    let exam = ref<number>(0);
   
     const scoresolver = ()=> {
       score.value = rating.value * 0.6 + exam.value * 0.4
@@ -53,6 +54,9 @@
 
     const scoresolver1 = ()=> {
       score1.value = (((6*rating1.value-10*70)/4)*-1)
+      if (score1.value < 50) {
+        score1.value = 50
+      }
       if (rating1.value < 50) {
         result1.value = "Тебя уже не спасти..."
       }
@@ -87,5 +91,5 @@
         rating1.value = 0
       }
   }
-  </script>
+</script>
   
