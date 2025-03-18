@@ -1,5 +1,5 @@
 <template>
-    <header class="flex flex-row w-full items-center relative max-sm:absolute max-sm:sticky max-sm:top-0 max-sm:justify-between">
+    <header class="flex flex-row w-full items-center relative max-sm:top-0 max-sm:justify-between">
         <div class="bg-gray-900 w-full flex flex-col px-2 pt-2 justify-start">
             <div :class = "{'bg-gray-900 justify-start border-t-4 border-r-4 border-l-4 border-yellow-500 flex flex-row w-full max-sm:flex-row items-center rounded-t-xl p-2': burger, 'bg-gray-900 justify-start max-sm:border-4 border-x-4 border-t-4 border-yellow-500 flex flex-row w-full max-sm:flex-row items-center max-sm:rounded-xl rounded-t-xl p-2': !burger}">
                     <div class="max-sm:basis-1/4 items-center flex flex-row">
