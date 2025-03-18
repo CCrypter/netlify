@@ -27,7 +27,7 @@
                         <NuxtLink to = "/clicker" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:text-center">Кликер</NuxtLink>
                         <NuxtLink to = "/tictactoe" class="hidden my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:text-center">Крестики-Нолики</NuxtLink>
                         <div @click = "switch_labs" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:text-center">Labs
-                            <div :class = "{'hidden border-4 space-y-2 border-yellow-500 bg-gray-900 -translate-x-3 translate-y-4 0 justify-center rounded-b-xl p-1 flex flex-col absolute text-black w-56 text-center max-sm:p-0': labs, 'hidden': !labs}">
+                            <div :class = "{'border-4 space-y-2 border-yellow-500 bg-gray-900 -translate-x-3 translate-y-4 0 justify-center rounded-b-xl p-1 flex flex-col absolute text-black w-56 text-center max-sm:p-0': labs, 'hidden': !labs}">
                                 <NuxtLink to = "/lab1" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab1</NuxtLink>
                                 <NuxtLink to = "/lab2" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab2</NuxtLink>
                                 <NuxtLink to = "/lab3" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab3</NuxtLink>
