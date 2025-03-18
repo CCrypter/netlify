@@ -1,6 +1,12 @@
 <template>
-               <nav class = "text-white text-center basis-1/2 flex flex-row justify-end px-4 gap-4"> //
-                    <NuxtLink to = "/LogIn" id="NuxtLinkPage2" class="my-auto p-2 rounded-xl hover:bg-gradient-to-r from-purple-500 to-teal-400 hover:text-black">LogIn</NuxtLink>
-                    <NuxtLink to = "/LogOut" id="NuxtLinkPage3" class="my-auto p-2 rounded-xl hover:bg-gradient-to-r from-purple-500 to-teal-400 hover:text-black">LogOut</NuxtLink>
-                </nav>
+    <div class="grid grid-cols-4 p-2 text-center text-xl font-bold text-white gap-4">
+  <div class="rounded-xl bg-gray-500">01</div>
+  <div class="rounded-xl bg-gray-500">02</div>
+  <div class="rounded-xl bg-gray-500">03</div>
+  <div class="rounded-xl bg-gray-500">04</div>
+  <div class="rounded-xl bg-gray-500">05</div>
+  <div class="rounded-xl bg-gray-500">06</div>
+  <div class="rounded-xl bg-gray-500">07</div>
+  <div class="rounded-xl bg-gray-500">08</div>
+</div>
 </template>

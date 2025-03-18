@@ -10,9 +10,9 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "bgg": "url('assets/img/background.png')"
-      }
+      screens: {
+        'max-sm': {'max': '480px'},
+      },
     },
   },
   plugins: [],
