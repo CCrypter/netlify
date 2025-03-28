@@ -1,12 +1,19 @@
 <template>
-    <div class="grid grid-cols-4 p-2 text-center text-xl font-bold text-white gap-4">
-  <div class="rounded-xl bg-gray-500">01</div>
-  <div class="rounded-xl bg-gray-500">02</div>
-  <div class="rounded-xl bg-gray-500">03</div>
-  <div class="rounded-xl bg-gray-500">04</div>
-  <div class="rounded-xl bg-gray-500">05</div>
-  <div class="rounded-xl bg-gray-500">06</div>
-  <div class="rounded-xl bg-gray-500">07</div>
-  <div class="rounded-xl bg-gray-500">08</div>
-</div>
+  <div class="max-w-3xl mx-auto py-12">
+    <Carousel :slides="slides" autoplay>
+      <template #slide="{ slide }">
+        <div class="aspect-video bg-gray-200 flex items-center justify-center">
+          <h2 class="text-4xl font-bold">{{ slide.title }}</h2>
+        </div>
+      </template>
+    </Carousel>
+  </div>
 </template>
+
+<script setup>
+const slides = [
+  { title: 'Slide 1', content: 'Content for slide 1' },
+  { title: 'Slide 2', content: 'Content for slide 2' },
+  { title: 'Slide 3', content: 'Content for slide 3' },
+];
+</script>

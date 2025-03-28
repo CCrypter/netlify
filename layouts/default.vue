@@ -1,9 +1,9 @@
-<template>
+<template class="bg-gray-900">
     <header class="flex flex-row w-full items-center relative max-sm:top-0 max-sm:justify-between">
         <div class="bg-gray-900 w-full flex flex-col px-2 pt-2 justify-start">
             <div :class = "{'bg-gray-900 justify-start border-t-4 border-r-4 border-l-4 border-yellow-500 flex flex-row w-full max-sm:flex-row items-center rounded-t-xl p-2': burger, 'bg-gray-900 justify-start max-sm:border-4 border-x-4 border-t-4 border-yellow-500 flex flex-row w-full max-sm:flex-row items-center max-sm:rounded-xl rounded-t-xl p-2': !burger}">
                     <div class="max-sm:basis-1/4 items-center flex flex-row">
-                        <img src="assets/img/CCrypter.png" class ="w-10 h-10 rounded-xl mr-2">
+                        <img src="/img/CCrypter.png" class ="w-10 h-10 rounded-xl mr-2">
                         <p class="text-3xl text-bold text-white mr-2">CCrypter</p>
                     </div>
                     <div class = "hidden max-sm:block basis-1/4 max:sm:basis-auto"></div>
@@ -21,7 +21,7 @@
                     </div>
             </div>
             <div :class = "{'bg-gray-900 justify-start border-b-4 border-r-4 border-l-4 border-yellow-500 flex flex-col w-full max-sm:flex-col rounded-b-xl px-2 pb-2 mb-2': burger, 'max-sm:hidden border-b-4 border-r-4 border-l-4 border-yellow-500 rounded-b-xl px-2 pb-2': !burger}">
-                <nav class = "space-y-2 flex flex-row items-center max-sm:basis-auto max-sm:w-full max-sm:justify-center max-sm:flex-col max-sm:gap-0 max-sm:px-0">     
+                <nav class = "space-y-2 flex flex-row max-sm:basis-auto max-sm:w-full max-sm:justify-center max-sm:flex-col max-sm:gap-0 max-sm:px-0">     
                     <div class="items-center flex flex-row space-x-2 justify-start max-sm:flex-col max-sm:space-y-2 max-sm:space-x-0 w-full">
                         <NuxtLink to = "/" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:text-center">Вычислятор</NuxtLink>
                         <NuxtLink to = "/clicker" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:text-center">Кликер</NuxtLink>
@@ -31,15 +31,15 @@
                                 <NuxtLink to = "/lab1" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab1</NuxtLink>
                                 <NuxtLink to = "/lab2" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab2</NuxtLink>
                                 <NuxtLink to = "/lab3" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab3</NuxtLink>
-                                <NuxtLink to = "/lab4" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab4</NuxtLink>
+                                <NuxtLink to = "/lab4" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">RoR2 Survivors</NuxtLink>
                             </div>
                         </div>
                     </div>
-                    <div :class = "{'hidden w-full gap-2 text-center max-sm:flex': labs, 'hidden': !labs}">
+                    <div :class = "{'place-items-start dhidden gap-2 text-center max-sm:flex max_sm:flex-row': labs, 'hidden': !labs}">
                             <NuxtLink to = "/lab1" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black w-full mb-2 text-center">Lab1</NuxtLink>
                             <NuxtLink to = "/lab2" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab2</NuxtLink>
                             <NuxtLink to = "/lab3" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab3</NuxtLink>
-                            <NuxtLink to = "/lab4" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab4</NuxtLink>
+                            <NuxtLink to = "/lab4" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">RoR2 Survivors</NuxtLink>
                     </div>    
                 </nav>
             </div>
@@ -48,8 +48,8 @@
         <div class="p-2 bg-gray-900">
             <slot/>
         </div>
-    <footer class = "flex flex-row w-full bg-gray-900 items-center justify-center px-4 py-2 gap-4">
-        <a href = "https://www.youtube.com/@ccrypter"><img src="assets/img/youtube-yellow.svg" class="w-16 h-16"></a>
+    <footer class = "flex flex-row w-full sticky bottom-0 bg-gray-900 items-center justify-center px-4 py-2 gap-4">
+        <a href = "https://www.youtube.com/@ccrypter"><img src="/img/youtube-yellow.svg" class="w-16 h-16"></a>
     </footer>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-900 flex items-center justify-center" @click = 'ClickerIncrease'>
+  <div class="bg-gray-900 flex items-center justify-center" @click = 'ClickerIncrease'>
     <div class="bg-yellow-500 p-1 rounded-lg">
       <div class="bg-gray-900 rounded-lg p-10">
         <h1 class="text-yellow-500 text-5xl font-bold text-center mb-5 no-select">Кликер!</h1>
