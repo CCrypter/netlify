@@ -49,7 +49,7 @@
             <slot/>
         </div>
     <footer class = "flex flex-row w-full sticky bottom-0 bg-gray-900 items-center justify-center px-4 py-2 gap-4">
-        <a href = "https://www.youtube.com/@ccrypter"><img src="/img/youtube-yellow.svg" class="w-16 h-16"></a>
+        <a target="_blank" href = "https://www.youtube.com/@ccrypter"><img src="/img/youtube-yellow.svg" class="w-16 h-16"></a>
     </footer>
 </template>
 
