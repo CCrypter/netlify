@@ -35,7 +35,7 @@
                             </div>
                         </div>
                     </div>
-                    <div :class = "{'place-items-start dhidden gap-2 text-center max-sm:flex max_sm:flex-row': labs, 'hidden': !labs}">
+                    <div :class = "{'place-items-start hidden gap-2 text-center max-sm:flex max_sm:flex-row': labs, 'hidden': !labs}">
                             <NuxtLink to = "/lab1" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black w-full mb-2 text-center">Lab1</NuxtLink>
                             <NuxtLink to = "/lab2" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab2</NuxtLink>
                             <NuxtLink to = "/lab3" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab3</NuxtLink>
