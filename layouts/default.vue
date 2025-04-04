@@ -29,23 +29,23 @@
                         <div @click = "switch_labs" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:text-center">Labs
                             <div :class = "{'max-sm:hidden border-4 space-y-2 border-yellow-500 bg-gray-900 -translate-x-3 translate-y-4 0 justify-center rounded-b-xl p-1 flex flex-col absolute text-black w-56 text-center max-sm:p-0': labs, 'hidden': !labs}">
                                 <NuxtLink to = "/lab1" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab1</NuxtLink>
-                                <NuxtLink to = "/lab2" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab2</NuxtLink>
-                                <NuxtLink to = "/lab3" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab3</NuxtLink>
-                                <NuxtLink to = "/lab4" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">RoR2 Survivors</NuxtLink>
+                                <NuxtLink to = "/lab2" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab5. Calculator</NuxtLink>
+                                <NuxtLink to = "/lab5" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab5. Meme selector</NuxtLink>
+                                <NuxtLink to = "/ror2_survivors" class="my-auto p-2 rounded-xl max-sm:bg-gray-500 bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:mb-2 max-sm:text-center">Lab4. RoR2 Survivors</NuxtLink>
                             </div>
                         </div>
                     </div>
                     <div :class = "{'place-items-start hidden gap-2 text-center max-sm:flex max_sm:flex-row': labs, 'hidden': !labs}">
                             <NuxtLink to = "/lab1" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black w-full mb-2 text-center">Lab1</NuxtLink>
-                            <NuxtLink to = "/lab2" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab2</NuxtLink>
-                            <NuxtLink to = "/lab3" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab3</NuxtLink>
-                            <NuxtLink to = "/lab4" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">RoR2 Survivors</NuxtLink>
+                            <NuxtLink to = "/lab2" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab5. Calculator</NuxtLink>
+                            <NuxtLink to = "/lab5" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab5. Meme selector</NuxtLink>
+                            <NuxtLink to = "/ror2_survivors" class="my-auto p-2 rounded-xl bg-gray-700 active:bg-yellow-500 text-white active:text-black max-sm:w-full max-sm:mb-2 max-sm:text-center">Lab4. RoR2 Survivors</NuxtLink>
                     </div>    
                 </nav>
             </div>
         </div>   
     </header>
-        <div class="p-2 bg-gray-900">
+        <div class="p-2 min-h-screen bg-gray-900">
             <slot/>
         </div>
     <footer class = "flex flex-row w-full sticky bottom-0 bg-gray-900 items-center justify-center px-4 py-2 gap-4">

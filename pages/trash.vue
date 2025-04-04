@@ -1,19 +1,9 @@
 <template>
-  <div class="max-w-3xl mx-auto py-12">
-    <Carousel :slides="slides" autoplay>
-      <template #slide="{ slide }">
-        <div class="aspect-video bg-gray-200 flex items-center justify-center">
-          <h2 class="text-4xl font-bold">{{ slide.title }}</h2>
-        </div>
-      </template>
-    </Carousel>
-  </div>
+  <div class="flex justify-center">
+  <select class="flex w-1/2 px-4 py-2 mt-1 text-white bg-gray-600 border-gray-800 rounded-xl hover:border-yellow-500 border-4">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select>
+</div>
 </template>
-
-<script setup>
-const slides = [
-  { title: 'Slide 1', content: 'Content for slide 1' },
-  { title: 'Slide 2', content: 'Content for slide 2' },
-  { title: 'Slide 3', content: 'Content for slide 3' },
-];
-</script>
