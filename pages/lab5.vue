@@ -42,18 +42,22 @@
   const search = ref<string>('')
 
   const filtering = reactive<stking[]>([
-  {names: ['lenov', 'lenovo', 'laptop', 'incident', 'ленов', 'леново', 'ты что творишь', 'леново ты что творишь', 'это rofls', 'rofls', 'рофлс', 'это рофлс', 'ktyjdj', 'ktyjd'], image: "img/lenovo_incident.jpg"},
+  {names: ['lenovo', 'laptop', 'incident','леново', 'инцидент', 'ты что творишь', 'rofls', 'рофлс'], image: "img/lenovo_incident.jpg"},
   {names: ['glasses', 'cool', 'ccrypter', 'krupter', 'cc', 'никита', 'круптер', 'очки', 'крутой'], image: "img/ccrypter_cool.png"},
-  {names: ['smile', 'smil', 'ухмылка', 'улыбка'], image: "img/ccrypter_smile.png"},
-  {names: ['psy', 'psycho', 'psyc', 'psych', 'пси', 'псих', 'пизд', 'пизде', 'пиздец'], image: "img/ccrypter_psycho.png"},
-  {names: ['mlg', 'ccrypter mlg', 'doritos', 'but my hope will never die', 'but my hope', 'млг', 'мем доритос', 'доритос'], image: "img/mlg_ccrypter.png"},
-  {names: ['olga', 'buy beer', '300m','290m', 'ольга', 'куплю пива', 'пиво'], image: "img/olga.png"},
+  {names: ['smile', 'ухмылка', 'улыбка'], image: "img/ccrypter_smile.png"},
+  {names: ['psycho','псих', 'пиздец'], image: "img/ccrypter_psycho.png"},
+  {names: ['mlg', 'ccrypter mlg', 'doritos', 'but my hope will never die', 'млг', 'доритос', 'мем', 'meme'], image: "img/mlg_ccrypter.png"},
+  {names: ['olga', 'buy beer', '300m','290m', 'ольга', 'пиво', 'куплю'], image: "img/olga.png"},
 ])
 
 const finder = computed(() => {
+  if (search.value != ''){
   return filtering.filter(img => 
-    img.names.some(name => name === search.value)
+  img.names.some(name => 
+  name.toLowerCase().includes(search.value.toLowerCase()))
+  
   )
+  }
 })
 
   const pages = [
